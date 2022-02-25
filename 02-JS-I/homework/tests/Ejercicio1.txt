@@ -1,20 +1,98 @@
            Variables
 
+Una variable en programacion se utiliza para guardar un valor. Como ejemplo podriamos
+decir que una variable es como una caja, donde guardamos cosas. A esa caja le podes
+poner un nombre o una etiqueta para saber que contiene en su interior.
+Cuando necesitas el objeto de la caja, buscas la caja por el nombre que le habias 
+asignado, cuando guardaste el objeto. Eso es lo que se hace en programacion, llamas a
+la variable (agarras la caja), nombras la variable (le pones un nombre 
+o etiqueta a la caja), y luego le das un valor a la variable
+(introducis el objeto dentro de la caja). Ejemplo:
+
+var ropa = "remeras";
+
+var es la caja (var, palabra designada para variable)
+ropa es el nombre o etiqueta de la caja (nombre de la variable)
+remeras es lo que contiene la caja (tipo de dato de la variable)
+
+Las variables al igual que una caja, permiten guardar casi cualquier objeto, pero 
+para ser ordenados, esos objetos no se pueden mezclar. Si guardas ropa en una caja,
+en esa misma caja, no podes guardar botellas, necesitas otra caja.
+Esos objetos que guardas en las cajas (variables), en programacion serian los
+"tipos de datos". Entre los tipos de datos se encuentran los strings que representan
+cadenas de texto; Int que representan numeros enteros y booleans que representan dos 
+valores logicos, true o false.  
 
 
            Strings
 
+Un string es una cadena de texto, una serie de carcacteres (letras, numeros, simbolos)
+que se colocan entre comillas. De esa forma el programa sabe que lo que se encuentra 
+entre las comillas es un dato del tipo string y lo va a mostrar como un texto.
+
+var saludo = "Hola!";
+var saldo = "$150";
 
 
            Funciones (argumentos, return)
 
+La funciones son un bloque de programa que nos permite reutilizar ese bloque las
+veces que queramos, solo llamando (invocando) esa funcion, sin tener que rescribir
+todo el bloque de nuevo y nos permite cambiar sus argumentos (variables) para obtener
+distintos resultados. Dentro de ese bloque hay un conjunto de objetos que al juntarlos,
+cambiarlos o calcularlos nos dan un resultado.
+Para armar una funcion se utiliza la palabra clave "function" seguida del nombre del 
+la funcion y parentesis. Dentro de los parentesis podemos agregar el o los argumentos
+separados por comas. Despues entre llaves va el programa, lo que va a realizar la 
+funcion, como operaciones matematicas, mostrar algun cartel de texto, realizar alguna
+declaracion condicional, etc.
+
+  Argumentos:
+
+El argumento es lo que va entre los parentesis de la funcion y es una variable que va
+a utilizar la funcion para realizar las operaciones que tiene programadas dentro del 
+bloque (entre llaves).
+
+  Return:
+
+La sentencia return lo que hace es finalizar el programa que estaba dentro del 
+bloque de la funcion y entrega el valor que obtuvo el programa de dicha funcion. tener
+en cuenta que como return finaliza el programa dentro del bloque, si hubiera mas programa
+escrito debajo del return, no se leeria. Por eso el return se coloca al final.  
 
 
            Declaraciones if
 
+El if en programacion es una condicion que se tiene que cumplir para que se ejecute 
+el bloque, en caso de no cumplirse esa condicion el programa sigue al siguiente bloque,
+else if, para ver si la condicion se cumple y ejecutar la operacion del codigo. 
+Y si no se cumple sigue al else donde termina entregando el resultado final.
+Ejemplo: Si cumplis la condicion de aprobar el examen con 10, obtenes un premio, una
+PS 5. En caso de que la nota sea entre 7 y 9, el premio va a ser un autito
+de juguete. Y si la nota es inferior a 7 (desaprobas), castigo! limpiar tu pieza y el patio
+por 3 meses.
+
+var nota = 10;
+
+if (nota == 10){
+    console.log ("Play 5");
+
+}else if (nota < 10 && nota >= 7 ){
+    console.log("Autito");
+
+}else{
+    console.log("castigo");
+    }
+
+Dependiendo el valor que tenga la variable nota, es el bloque que se va a ejecutar.
 
 
            Valores booleanos (true, false)
+
+Son valores que representan solo dos resultados, verdadero o falso, 1 o 0, si o no.
+Las sentencias if utilizan valores booleanos para determinar si la condicion es verdadera
+y finalizar el programa o falsa y saltar al siguiente bloque.         
+
 
 
 
