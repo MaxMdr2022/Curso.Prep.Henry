@@ -73,6 +73,8 @@ function arrayContiene(array, elemento) {
       return true;
     }
   }return false;
+
+  // return array.includes(elemento);  este metodo hace todo lo anterior, incluye 
 }
 
 
@@ -84,6 +86,9 @@ function agregarNumeros(numeros) {
   for ( var i =0; i<= numeros.length -1; i++ ){
       suma = suma + numeros[i];
   }return suma;
+
+  // se puede simplificar con:
+  // return numeros.reduce(function(suma,numeros){return suma + numeros})
 }
 
 
