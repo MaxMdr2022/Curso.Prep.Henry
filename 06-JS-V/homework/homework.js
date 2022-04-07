@@ -72,7 +72,7 @@ function agregarStringInvertida() {
     constructor(nombre,apellido,edad,domicilio) {
       // Crea el constructor:
 
-      this.nombre = nombre;
+      this.nombre = nombre; // this hace referencia a persona
       this.apellido = apellido;
       this.edad=edad;
       this.domicilio = domicilio;
@@ -80,12 +80,12 @@ function agregarStringInvertida() {
     }
  
     detalle() {
-      return
-      nombre: this.nombre;
-      apellido: this.apellido;
-      edad: this.edad;
-      domicilio:this.domicilio;
-    
+      return { //nos devuelve un objeto dice el enunciado, y un objeto se escribe entre {}, si pedia un array , que el objeto este dentro de un array, ponia []
+      nombre: this.nombre,
+      apellido: this.apellido,
+      edad: this.edad,
+      domicilio:this.domicilio,
+      }
     }
 
    
@@ -97,7 +97,7 @@ function crearInstanciaPersona(nombre, apellido, edad, dir) {
   //Recibirá los valores "Juan", "Perez", 22, "Saavedra 123" para sus respectivas propiedades
   //Devolver la nueva persona creada
 
-  var nuevaPersona = new Persona ("Juan","Perez",22,"Saavedra 123");
+  var nuevaPersona = new Persona (nombre,apellido,edad,dir);// en el ejercicio anterior creamos una plantilla llamada persona, en este ejerc tenemos que crear una persona que va a tener esas caracteristicas, nombre...
 
   return nuevaPersona;
 }

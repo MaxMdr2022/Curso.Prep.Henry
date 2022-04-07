@@ -1,0 +1,9 @@
+             for
+
+             &&
+
+      Los dos simbolos && se utilizan para decir "Y" en        
+
+             ||
+
+             !
