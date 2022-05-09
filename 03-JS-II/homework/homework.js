@@ -12,6 +12,7 @@ function obtenerMayor(x, y) {
     return y;
   }else {
     return x;
+    
   }
 }
 
