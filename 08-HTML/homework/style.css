@@ -1,0 +1,29 @@
+
+
+h1 {
+    color:dimgray;
+} 
+
+img {
+    width: 400px;
+    height: 297px;
+}
+
+#thirdDiv {
+
+    height: 650px;
+    width: 500px;
+    background:brown;
+    
+    padding: 50px;
+    border: 5px solid black;
+}
+
+#spanId {
+
+    font-size: 18px;
+
+    margin:50px;
+}
+
+    
